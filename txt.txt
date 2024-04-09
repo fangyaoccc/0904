@@ -1,0 +1,16 @@
+1) How to read information from a file?
+
+1.Using BufferedReader and FileReader
+This method is efficient for reading large files line by line, reducing memory consumption.
+2.Using Files.readAllLines()
+This method is suitable for reading smaller files or when you need to process all lines of the file at once. It reads all lines into a List<String>.
+3.Using Files.readString()
+For Java 11 and newer versions, Files.readString() provides a straightforward way to read the entire content of a small to medium-sized file into a single String.
+
+
+2)How to write information to a file?
+1.Using BufferedWriter and FileWriter
+This method allows for writing text to a file with more control, such as appending or overwriting existing files.
+2.Using Files.write() 
+The Files.write() method offers a convenient way to write to files without needing to manually manage opening and closing file streams. 
+It can overwrite the existing content or append to it, based on the options passed.
